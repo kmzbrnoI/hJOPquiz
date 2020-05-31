@@ -86,7 +86,7 @@ provede s~no\-váč\-kem praktickou část zkoušky.
 
 \newpage
 
-\section{S0 – strojvedoucí hJOPdriver}
+\section{R – strojvedoucí hJOPdriver}
 
 Opravňuje k~řízení vlaků přes mobilní aplikaci hJOPdriver.
 
@@ -141,22 +141,17 @@ pohybuje, a kontrolovat návěsti na něm.}
 
 \newpage
 
-\section{S1 – dispečer základní}
+\section{S0 – dispečer minimální}
 
-Opravňuje k~řízení menších stanic.
-
-Pro tuto úroveň zaškolení je doporučeno mít zaškolení na úrovni S0. Výjimkou
-je situace, kdy dispečeři používají k~řízení jízdy jiné prostředky než mobilní
-aplikaci hJOPdriver.
+Úroveň vhodná pro maloše v~kroužku, obsahuje nejnutnější základ pro samostatné
+řízení malé stanice v~automatickém režimu bez ručního řízení a editace souprav.
 
 \subsection{Praktická část}
 
 \subsubsection*{Přihlášení, odhlášení}
 \begin{enumerate}[leftmargin=*]
 \item Spusťte panel. Připojte se k~serveru, přihlaste se, odpojte se od
-serveru. Přihlaste se v~režimu čtenáře, demonstrujte přihlášení více panelů.
-\item Proveďte přihlášení k~jednomu panelu a ke všem spuštěným panelům.
-\item Zobrazte a skryjte popisky bloků.
+serveru.
 \end{enumerate}
 
 \subsubsection*{Základní obsluha vlaků}
@@ -168,16 +163,6 @@ serveru. Přihlaste se v~režimu čtenáře, demonstrujte přihlášení více p
 \subsubsection*{Dopravní kancelář}
 \begin{enumerate}[leftmargin=*]
 \item Demonstrujte komunikaci se sousedními dispečery (telefon, poslání zprávy).
-\item Demonstrujte přepnutí řízení na místní a dálkový provoz.
-\end{enumerate}
-
-\subsubsection*{Soupravy}
-\begin{enumerate}[leftmargin=*]
-\item Proveďte vytvoření soupravy.
-\item Proveďte smazání soupravy.
-\item Zobrazte seznam souprav v~obvodech všech vámi řízených stanic, vysvětlete
-význam tohoto seznamu.
-\item Upravte výchozí a cílovou stanici soupravy v~koncové stanici.
 \end{enumerate}
 
 \subsubsection*{Bloky}
@@ -187,37 +172,18 @@ význam tohoto seznamu.
 \item Vyřešte uvázlý vagón v~trati.
 \item Proveďte nouzové uvolnění závěrů úseků. Vysvětlete, kdy se takové uvolnění
 provádí.
-\item Demonstrujte obsluhu rozpojovačů.
-\item Zaveďte štítek na úseku.
 \end{enumerate}
 
 \subsubsection*{Jízdní cesty}
 \begin{enumerate}[leftmargin=*]
 \item Proveďte zrušení JC. Ukažte co nejvíce postupů.
-\item Demonstrujte posun ve stanici.
-\item Proveďte obsluhu vlaku v~ručním režimu řízení, včetně stavění jízdních
-cest.
-\end{enumerate}
-
-\subsubsection*{Ruční řízení}
-\begin{enumerate}[leftmargin=*]
-\item Předveďte ruční řízení vlaku přes aplikaci Jerry.
-\item Předveďte komunikaci se strojvedoucím.
-\item Demonstrujte násilné převzetí soupravy od strojvedoucího.
 \end{enumerate}
 
 \subsubsection*{Krizové scénáře}
 \begin{enumerate}[leftmargin=*]
 \item Proveďte nouzové zastavení provozu na celém kolejišti.
-\item Proveďte nouzové zastavení jedné lokomotivy.
 \item Vyřešte situaci, kdy vlak přejel do následujícího kolejového obvodu.
-\item Vyřešte situaci, kdy vlak rozřezal výhybku a způsobil zkrat.
-\end{enumerate}
-
-\subsubsection*{Poznání}
-\begin{enumerate}[leftmargin=*]
-\item Demonstrujte poznání trati, ukažte polohy jednotlivých návěstidel, typy
-traťových zabezpečovacích zařízení.
+\item Vyřešte situaci, kdy vlak rozřízl výhybku a způsobil zkrat.
 \end{enumerate}
 
 
@@ -226,43 +192,20 @@ traťových zabezpečovacích zařízení.
 \subsubsection*{Přihlašování, odhlašování}
 \begin{enumerate}[leftmargin=*]
 
-\item Vysvětlete, jak funguje mechanismus přihlašování k~více panelům zároveň.
-Kdy tento mechanismus použít a~kdy naopak ne?
-\solution{Pro přihlášení k~více panelům zároveň je nutné nejdříve spustit
-všechny požadované panely, pak se v~jednom z~nich připojit k~serveru a~ponechat
-zatrhnutou možnost \textit{Autorizovat další panely}. Tím se automaticky
-přihlásí všechny další spuštěné panely. \\ Volbu \textit{Autorizovat další
-spuštěné panely} je vhodné ručně odtrhnout v~případě, kdy se chcete přihlásit
-pouze k~jedné stanici, například jako čtenář. Pokud byste tuto volbu ponechali
-zatrhnutou, všechny ostatní spuštěné panely, na které můžete být přihlášeni vy,
-se přehlásí na čtenáře, a~vy tak ztratíte možnost ovládat kolejiště.}
-
 \item Jak poznáte, že je panel připojen k~serveru?
 \solution{Vlevo dole na panelu je napsáno \textit{Připojeno k~serveru}}.
-
-\item Vysvětlete význam přepnutí stanice na místní a dálkový provoz.
-\solution{Místní provoz (šedá DK) = ovládáte stanici, ovládáte pouze vy a~nikdo
-jiný. Dálkový provoz (bílá DK) = pozorujete stanici, neovládáte, stanici může
-ovládat někdo jiný.}
 
 \item Popište postup přebírání stanice jiným dispečerem, například při změně
 směn.
 \solution{Odcházející dispečer se odhlásí, nový dispečer se přihlásí na svůj
 účet.}
 
-\item Chcete se přihlásit ke stanici pouze na dívání, jak to provedete?
-\solution{Při přihlašování zvolíte \textit{Přihlásit se jako host} a ideálně
-odškrtnete \textit{Autorizovat další panely}.}
-
 \item Jak potlačíte zvukovou notifikaci zkratu na kolejišti? Je toto
 potlačení trvalé?
 \solution{Na horní liště je ikona s~reproduktorem a křížkem. Potlačení trvá
 1~minutu.}
 
-\item Můžete z~libovolného pracoviště ovládat libovolnou stanici?
-\solution{Pokud je ikona na ploše, ano.}
-
-\item Jakými všemi metodami mohu komunikovat s~dispečery sousedních stanic?
+\item Jakými všemi metodami můžete komunikovat s~dispečery sousedních stanic?
 \solution{Napsání zprávy, zavolání telefonem, fyzický rozhovor.}
 
 \item Ke kolejišti přijde váš kamarád, který si chce zajezdit, ale nemá
@@ -275,51 +218,10 @@ a~nechat ho provádět úkony dispečera, ale musí být pod vaším trvalým do
 
 \subsubsection*{Soupravy}
 \begin{enumerate}[leftmargin=*]
-\item Jaký je rozdíl mezi vlakem, lokomotivou a~soupravou? Může se lokomotiva
-sama pohybovat na širé trati?
-\solution{Vlak = souprava. Souprava je složena z~jedné nebo více lokomotiv.
-Lokomotiva se na trati typicky pohybuje jako lokomotivní vlak.}
-
-\item Jak poznáte typ blížícího se vlaku? Jaká rozhodnutí na základě typu
-typicky děláte?
-\solution{Z~předčíslí soupravy. Podle typu vlaku například volíte kolej, na
-kterou vlak přijmete: osobní vlaky vždy k~perónu.}
-
-\item Vyjmenujte, jaká předčíslí souprav mají jaký význam.
-
 \item Jaké je typické složení čísla vlaku? Jak poznat z~čísla vlaku DCC adresu
 lokomotivy?
 \solution{Šestimístné číslo vlaku: dvojmístné předčíslí (typ soupravy)
 a~čtyřmístná adresa dekodéru hnacího vozidla.}
-
-\item Vysvětlete rozdíl mezi možným směrem vlaku a~směrem stanoviště A.
-\solution{Směr vlaku udává možný směr, kterým se vlak může pohybovat. Může být
-jeden nebo i~oba směry. Podle možného směru vlaku se vykresluje šipka nad
-číslem vlaku v~reliéfu. Možný směr vlaku neovlivňuje fyzický směr jízdy
-lokomotivy. Možný směr vlaku je vlastnost vlaku. \\ Orientace stanoviště A~je
-vlastnost lokomotivy. Udává, jakým směrem je lokomotiva fyzicky na kolejišti.
-Je nutné jej správně zadat, aby lokomotiva jela správným směrem.}
-
-\item Jak poznat, že mají hnací vozidla vlaku správně zadána stanoviště A?
-\solution{Všechny lokomotivy vlaku svítí správným směrem.}
-
-\item Kdy je a~kdy není třeba upravovat výchozí a~cílovou stanici soupravy?
-\solution{Výchozí a~cílová stanice se automaticky mění ve smyčkách. Pokud vlak
-končí v~jiné stanici, je třeba mu upravit výchozí a~cílovou stanici ručně.
-Vlak, který dorazit do cílové stanice, má své číslo šedě podbarvené.}
-
-\item Kolik lokomotiv může mít souprava?
-\solution{Až 4.}
-
-\item Je nutné měnit orientaci stanoviště A~při otáčení vlaku v~koncové
-stanici?
-\solution{Ne. Naopak, dělat se to nesmí!}
-
-\item Je nutné zadávat vlaku jeho délku a~typ? Proč?
-\solution{Ano. Pro správné zastavování v~zastávkách a~u~perónů ve stanicích.}
-
-\item Na které místo ve vlaku je možné přivěsit čisticí vůz?
-\solution{Výhradně hned za lokomotivu.}
 
 \end{enumerate}
 
@@ -365,19 +267,6 @@ závěr vlakové cesty.}
 \symbol{symboly/vyh38.png}{0.1}{S~kontrolou volnosti kolejového úseku + úsek obsazen.}
 \symbol{symboly/vyh39.png}{0.1}{Bez kontroly volnosti kolejového úseku.}
 
-\symbol{symboly/vyk19.png}{0.1}{Ztráta komunikace.}
-\symbol{symboly/vyk1.png}{0.1}{Na koleji + úsek volný.}
-\symbol{symboly/vyk2.png}{0.1}{Sklopená + úsek volný.}
-\symbol{symboly/vyk3.png}{0.1}{Na koleji + úsek obsazen.}
-\symbol{symboly/vyk4.png}{0.1}{Sklopená + úsek obsazen.}
-\symbol{symboly/vyk5.png}{0.1}{Ztráta dohledu + úsek volný.}
-\symbol{symboly/vyk6.png}{0.1}{Ztráta dohledu + úsek obsazen.}
-
-\symbol{symboly/ez6.png}{0.05}{Ztráta komunikace.}
-\symbol{symboly/ez1.png}{0.05}{Klíč zapevněn.}
-\symbol{symboly/ez3.png}{0.05}{Klíč vyjmut.}
-\symbol{symboly/ez5.png}{0.05}{Ztráta kontroly.}
-
 \symbol{symboly/prej1.png}{0.1}{Otevřen.}
 \symbol{symboly/prej2.png}{0.1}{Uzavřen povelem dispečera.}
 \symbol{symboly/prej3.png}{0.1}{Nouzově otevřen.}
@@ -385,11 +274,6 @@ závěr vlakové cesty.}
 \item Kdy je a~kdy není nutné žádat o~traťový souhlas?
 \solution{O~traťový souhlas není nutné žádat, pokud ho mám udělen, nebo pokud
 jsem přihlášený do obou stanic tratě.}
-
-\item Co je to závěr a k~čemu slouží?
-\solution{Závěr je zapevnění bloku proti změně. Typicky například zamknutí
-výhybky. Závěr se uděluje na bloky v~jízdní cestě. Na výhybky, výkolejky a
-úvazky lze ručně udělit nouzový závěr volbou \texttt{ZAV>} v~menu bloku.}
 
 \item Sousední stanice vás žádá o~traťový souhlas, vy ho však chcete přijmout až
 za minutu, jak nejlépe sdělit sousední stanici, že má počkat?
@@ -411,31 +295,10 @@ koleje na reliéfu je kolej bez indikace obsazení.}
 
 \subsubsection*{Jízdní cesty}
 \begin{enumerate}[leftmargin=*]
-\item Má mít vlak v~ručním řízení postavenou jízdní cestu pro jízdu na
-kolejišti?
-\solution{Ano, vždy musí mít.}
-
-\item Jak mohu zrušit jízdní cestu? Popište co nejvíce metod.
+\item Jak můžete zrušit jízdní cestu? Popište co nejvíce metod.
 \solution{(a) Volbou \texttt{RC} na návěstidle, u~které začíná jízdní cesta
 (JC). (b) Postupným nouzovým uvolněním závěrů (\texttt{NUZ}) všech úseků JC.
 Závěr staniční koleje se uvolňuje automaticky (neoznačuje se volbou \texttt{NUZ}).}
-
-\item Popište vztah mezi pojmy \textit{jízdní cesta}, \textit{vlaková cesta}
-a~\textit{posunová cesta}.
-\solution{Jízdní cestou rozumíme cestu pro vlak (vlaková cesta) nebo pro posun
-(posunová cesta).}
-
-\end{enumerate}
-
-\subsubsection*{Ruční řízení}
-\begin{enumerate}[leftmargin=*]
-\item Vyjmenujte všechny možnosti, jak řídit lokomotivu ručně.
-\solution{(a) Skrze aplikaci Jerry. (b) Skrze aplikaci hJOPdriver. (c) Pomocí
-Roco Multimaus a~uLI.}
-
-\item Co znamená, když je v~ovladači zaškrtnuto \textit{ruční řízení}
-a k~čemu vás to opravňuje?
-\solution{\textit{Ruční řízení} znamená, že řídíte jízdu vlaku.}
 
 \end{enumerate}
 
@@ -447,13 +310,6 @@ narazí. Co uděláte?
 \solution{Klik na červenou ikonku na horní liště panelu \textit{Zastavit DCC
 na celém kolejišti}. Poté otevřít ovladač obou souprav, zastavit je a pustit
 DCC. Tím lokomotivy zůstanou stát a~celé kolejiště se rozjede.}
-
-\item Kdy použít nouzové zastavení celého kolejiště a~kdy vybrané soupravy?
-\solution{Nouzové zastavení celého kolejiště používejte v~případě, kdy není
-možné vlak zastavit jinak. Typicky například proto, že se vlak nenachází
-v~obvodu vámi řízené stanice. Nouzové zastavení celého kolejiště je krajní
-volbou!}
-
 \end{enumerate}
 
 \subsubsection*{Odpovědnost}
@@ -482,6 +338,213 @@ modelovali přípoje atp. Ideální je si na začátku směny se sousedními sta
 dohodnout takt (např. \uv{jeden vlak za jeden vlak}), případně jezdit podle
 grafikonu.}
 
+\end{enumerate}
+
+
+\newpage
+
+\section{S1 – dispečer základní}
+
+Opravňuje k~řízení menších stanic, včetně posunů a ručního řízení.
+
+Pro tuto úroveň zaškolení je nutné mít zaškolení na úrovni S0, doporučené je
+mít také zaškolení R. Výjimkou je situace, kdy dispečeři používají k~řízení
+jízdy jiné prostředky než mobilní aplikaci hJOPdriver.
+
+\subsection{Praktická část}
+
+\subsubsection*{Přihlášení, odhlášení}
+\begin{enumerate}[leftmargin=*]
+\item Přihlaste se v~režimu čtenáře, demonstrujte přihlášení více panelů.
+\item Proveďte přihlášení k~jednomu panelu a ke všem spuštěným panelům.
+\item Zobrazte a skryjte popisky bloků.
+\end{enumerate}
+
+\subsubsection*{Dopravní kancelář}
+\begin{enumerate}[leftmargin=*]
+\item Demonstrujte přepnutí řízení na místní a dálkový provoz.
+\end{enumerate}
+
+\subsubsection*{Soupravy}
+\begin{enumerate}[leftmargin=*]
+\item Proveďte vytvoření soupravy.
+\item Proveďte smazání soupravy.
+\item Zobrazte seznam souprav v~obvodech všech vámi řízených stanic, vysvětlete
+význam tohoto seznamu.
+\item Upravte výchozí a cílovou stanici soupravy v~koncové stanici.
+\end{enumerate}
+
+\subsubsection*{Bloky}
+\begin{enumerate}[leftmargin=*]
+\item Demonstrujte obsluhu rozpojovačů.
+\item Zaveďte štítek na úseku.
+\end{enumerate}
+
+\subsubsection*{Jízdní cesty}
+\begin{enumerate}[leftmargin=*]
+\item Demonstrujte posun ve stanici.
+\item Proveďte obsluhu vlaku v~ručním režimu řízení, včetně stavění jízdních
+cest.
+\end{enumerate}
+
+\subsubsection*{Ruční řízení}
+\begin{enumerate}[leftmargin=*]
+\item Předveďte ruční řízení vlaku přes aplikaci Jerry.
+\item Předveďte komunikaci se strojvedoucím.
+\item Demonstrujte násilné převzetí soupravy od strojvedoucího.
+\end{enumerate}
+
+\subsubsection*{Krizové scénáře}
+\begin{enumerate}[leftmargin=*]
+\item Proveďte nouzové zastavení jedné lokomotivy.
+\item Vyřešte situaci, kdy vlak přejel do následujícího kolejového obvodu.
+\item Vyřešte situaci, kdy vlak rozřízl výhybku a způsobil zkrat.
+\end{enumerate}
+
+\subsubsection*{Poznání}
+\begin{enumerate}[leftmargin=*]
+\item Demonstrujte poznání trati, ukažte polohy jednotlivých návěstidel, typy
+traťových zabezpečovacích zařízení.
+\end{enumerate}
+
+
+\subsection{Teoretická část}
+
+\subsubsection*{Přihlašování, odhlašování}
+\begin{enumerate}[leftmargin=*]
+
+\item Vysvětlete, jak funguje mechanismus přihlašování k~více panelům zároveň.
+Kdy tento mechanismus použít a~kdy naopak ne?
+\solution{Pro přihlášení k~více panelům zároveň je nutné nejdříve spustit
+všechny požadované panely, pak se v~jednom z~nich připojit k~serveru a~ponechat
+zatrhnutou možnost \textit{Autorizovat další panely}. Tím se automaticky
+přihlásí všechny další spuštěné panely. \\ Volbu \textit{Autorizovat další
+spuštěné panely} je vhodné ručně odtrhnout v~případě, kdy se chcete přihlásit
+pouze k~jedné stanici, například jako čtenář. Pokud byste tuto volbu ponechali
+zatrhnutou, všechny ostatní spuštěné panely, na které můžete být přihlášeni vy,
+se přehlásí na čtenáře, a~vy tak ztratíte možnost ovládat kolejiště.}
+
+\item Vysvětlete význam přepnutí stanice na místní a dálkový provoz.
+\solution{Místní provoz (šedá DK) = ovládáte stanici, ovládáte pouze vy a~nikdo
+jiný. Dálkový provoz (bílá DK) = pozorujete stanici, neovládáte, stanici může
+ovládat někdo jiný.}
+
+\item Chcete se přihlásit ke stanici pouze na dívání, jak to provedete?
+\solution{Při přihlašování zvolíte \textit{Přihlásit se jako host} a ideálně
+odškrtnete \textit{Autorizovat další panely}.}
+
+\item Můžete z~libovolného pracoviště ovládat libovolnou stanici?
+\solution{Pokud je ikona na ploše, ano.}
+
+\item Ke kolejišti přijde váš kamarád, který si chce zajezdit, ale nemá
+zaškolení (nemá login), co mu můžete povolit a co naopak nesmíte? Jak se k~němu
+máte chovat?
+\solution{Kamarád nesmí samostatně řídit stanici. Můžete ho pustit k~počítači
+a~nechat ho provádět úkony dispečera, ale musí být pod vaším trvalým dohledem.}
+
+\end{enumerate}
+
+\subsubsection*{Soupravy}
+\begin{enumerate}[leftmargin=*]
+\item Jaké je typické složení čísla vlaku? Jak poznat z~čísla vlaku DCC adresu
+lokomotivy?
+\solution{Šestimístné číslo vlaku: dvojmístné předčíslí (typ soupravy)
+a~čtyřmístná adresa dekodéru hnacího vozidla.}
+
+\item Vysvětlete rozdíl mezi možným směrem vlaku a~směrem stanoviště A.
+\solution{Směr vlaku udává možný směr, kterým se vlak může pohybovat. Může být
+jeden nebo i~oba směry. Podle možného směru vlaku se vykresluje šipka nad
+číslem vlaku v~reliéfu. Možný směr vlaku neovlivňuje fyzický směr jízdy
+lokomotivy. Možný směr vlaku je vlastnost vlaku. \\ Orientace stanoviště A~je
+vlastnost lokomotivy. Udává, jakým směrem je lokomotiva fyzicky na kolejišti.
+Je nutné jej správně zadat, aby lokomotiva jela správným směrem.}
+
+\item Jak poznat, že mají hnací vozidla vlaku správně zadána stanoviště A?
+\solution{Všechny lokomotivy vlaku svítí správným směrem.}
+
+\item Kdy je a~kdy není třeba upravovat výchozí a~cílovou stanici soupravy?
+\solution{Výchozí a~cílová stanice se automaticky mění ve smyčkách. Pokud vlak
+končí v~jiné stanici, je třeba mu upravit výchozí a~cílovou stanici ručně.
+Vlak, který dorazit do cílové stanice, má své číslo šedě podbarvené.}
+
+\item Kolik lokomotiv může mít souprava?
+\solution{Až 4.}
+
+\item Je nutné měnit orientaci stanoviště A~při otáčení vlaku v~koncové
+stanici?
+\solution{Ne. Naopak, dělat se to nesmí!}
+
+\item Je nutné zadávat vlaku jeho délku a~typ? Proč?
+\solution{Ano. Pro správné zastavování v~zastávkách a~u~perónů ve stanicích.}
+
+\item Na které místo ve vlaku je možné přivěsit čisticí vůz?
+\solution{Výhradně hned za lokomotivu.}
+
+\end{enumerate}
+
+\subsubsection*{Bloky}
+\begin{enumerate}[leftmargin=*]
+\item Vysvětlete význam následujících symbolů na reliéfu. \\
+\symbol{symboly/vyk19.png}{0.1}{Ztráta komunikace.}
+\symbol{symboly/vyk1.png}{0.1}{Na koleji + úsek volný.}
+\symbol{symboly/vyk2.png}{0.1}{Sklopená + úsek volný.}
+\symbol{symboly/vyk3.png}{0.1}{Na koleji + úsek obsazen.}
+\symbol{symboly/vyk4.png}{0.1}{Sklopená + úsek obsazen.}
+\symbol{symboly/vyk5.png}{0.1}{Ztráta dohledu + úsek volný.}
+\symbol{symboly/vyk6.png}{0.1}{Ztráta dohledu + úsek obsazen.}
+
+\symbol{symboly/ez6.png}{0.05}{Ztráta komunikace.}
+\symbol{symboly/ez1.png}{0.05}{Klíč zapevněn.}
+\symbol{symboly/ez3.png}{0.05}{Klíč vyjmut.}
+\symbol{symboly/ez5.png}{0.05}{Ztráta kontroly.}
+
+\item Co je to závěr a k~čemu slouží?
+\solution{Závěr je zapevnění bloku proti změně. Typicky například zamknutí
+výhybky. Závěr se uděluje na bloky v~jízdní cestě. Na výhybky, výkolejky a
+úvazky lze ručně udělit nouzový závěr volbou \texttt{ZAV>} v~menu bloku.}
+
+\item Jak poznáte směr trati na reliéfu?
+\solution{Ze směru šipky úvazky.}
+
+\end{enumerate}
+
+\subsubsection*{Jízdní cesty}
+\begin{enumerate}[leftmargin=*]
+\item Má mít vlak v~ručním řízení postavenou jízdní cestu pro jízdu na
+kolejišti?
+\solution{Ano, vždy musí mít.}
+
+\item Popište vztah mezi pojmy \textit{jízdní cesta}, \textit{vlaková cesta}
+a~\textit{posunová cesta}.
+\solution{Jízdní cestou rozumíme cestu pro vlak (vlaková cesta) nebo pro posun
+(posunová cesta).}
+
+\end{enumerate}
+
+\subsubsection*{Ruční řízení}
+\begin{enumerate}[leftmargin=*]
+\item Vyjmenujte všechny možnosti, jak řídit lokomotivu ručně.
+\solution{(a) Skrze aplikaci Jerry. (b) Skrze aplikaci hJOPdriver. (c) Pomocí
+Roco Multimaus a~uLI.}
+
+\item Co znamená, když je v~ovladači zaškrtnuto \textit{ruční řízení}
+a k~čemu vás to opravňuje?
+\solution{\textit{Ruční řízení} znamená, že řídíte jízdu vlaku.}
+
+\end{enumerate}
+
+\subsubsection*{Krizové scénáře}
+\begin{enumerate}[leftmargin=*]
+\item Kdy použít nouzové zastavení celého kolejiště a~kdy vybrané soupravy?
+\solution{Nouzové zastavení celého kolejiště používejte v~případě, kdy není
+možné vlak zastavit jinak. Typicky například proto, že se vlak nenachází
+v~obvodu vámi řízené stanice. Nouzové zastavení celého kolejiště je krajní
+volbou!}
+
+\end{enumerate}
+
+\subsubsection*{Vlakotvorba}
+\begin{enumerate}[leftmargin=*]
 \item Co to znamená, že se na kolejišti \textit{jezdí nákladní doprava} a~jak
 nákladní doprava funguje?
 \solution{Pokud se \textit{jezdí nákladní doprava}, každý vůz každého
