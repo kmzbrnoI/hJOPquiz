@@ -46,6 +46,7 @@
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{.4\baselineskip plus2pt minus1pt}
 \setlength{\droptitle}{-5em}
+\setlist[enumerate]{itemsep=0pt}
 
 \title{\bfseries
 {\Large Ovládání kolejiště pomocí hJOP\\}
@@ -53,7 +54,7 @@
 \ifsolution
 {\Large \color{gray}včetně řešení\\}
 \fi
-{\small v2.0}}
+{\small v2.1}}
 \author{Jan Horáček (jan.horacek@kmz-brno.cz)}
 \date{\today}
 \maketitle
@@ -88,33 +89,93 @@ provede s~no\-váč\-kem praktickou část zkoušky.
 
 \section{S0 – strojvedoucí hJOPdriver}
 
-Opravňuje k~řízení vlaků přes mobilní aplikaci hJOPdriver.
+Opravňuje k~řízení vlaků a posunových dílů přes mobilní aplikaci hJOPdriver.
 
 \subsection{Praktická část}
 
 \begin{enumerate}[leftmargin=*]
-\item Proveďte převzetí vlaku na ruční řízení.
-\item Proveďte uvolnění vlaku z~aplikace.
-\item Demonstrujte řízení lokomotiv v~multitrakci.
-\item Vysvětlete obsah sešitového jízdního řádu.
-\item Demonstrujte komunikaci s~výpravčím.
+\item Proveďte převzetí vlaku na ruční řízení, popište jednotlivé kroky přebírání.
+\item Řiďte vlak z~jedné stanice do druhé. Dbejte na řádné sjednání jízdy
+s~výpravčím.
+\item Uvolněte vlak z~aplikace.
+\item Demonstrujte řízení lokomotivy v~režimu \textit{posun}. Dbejte na řádné
+sjednání posunu s~výpravčím.
 \item Demonstrujte poznání trati, ukažte polohy jednotlivých návěstidel.
+\item Proveďte nouzové zastavení vlaku a~opětovné rozjetí.
+\item Převezměte vlak pouze v~režimu ovládání funkcí a řiďte takto vlak na trati.
+\item Popište významy vybraných návěstí na návěstním opakovači a doporučení chování
+pro strojvedoucího (např. zrychlit, zpomalit apod.).
+\item Proveďte posun s~obsluhou pomocného stavědla dle instrukcí výpravčího.
+\item Demonstrujte řízení lokomotiv v~multitrakci.
 \end{enumerate}
 
 \subsection{Teoretická část}
 \begin{enumerate}[leftmargin=*]
+\item V jakých základních režimech lze ručně řídit hnací vozidla? Jaké jsou rozdíly
+těchto režimů?
+\solution{Jako vlak nebo jako posun. Rozdílů je hodně – způsob sjednávání jízdy,
+ne/funkčnost návěstního opakovače, maximální rychlost. Je třeba znát specifika
+obou režimů.}
+
+\item Popište proces ručního řízení lokomotivy v~režimu \textit{posun} od zapnutí
+aplikace až do ukončení posunu. Na co je třeba si během posunu dávat pozor?
+\solution{Nejprve žádáte výpračího o~lokomotivu. Sjednáte si s ním, kam má
+posunový díl jet a co má dělat. Dáváte si pozor, abyste nevyjeli za hranice
+stanice (za bílý označník s modrou čepičkou). Posun vždy řídí výpravčí, není
+možné posunovat bez sjednání posunu s~ním. Výpravčí určuje, kdy a kam se bude
+sunout, má právo posun kdykoliv přerušit. Při posunu se nedbá na návěst na
+návěstním opakovači. Svévolné ježdění s posunovým dílem bude mít za následek
+odebrání práva k ručnímu řízení! Posun končí uvolněním lokomotivy z~ručního řízení.}
+
 \item K~čemu slouží v~ovladači volba \textit{Ruční řízení}?
 \solution{Při nezaškrtnutém \textit{Ručním řízení} řídíte pouze funkce, nikoliv
 jízdu. Po zaškrtnutí \textit{Ruční řízení} řídíte i~jízdu vlaku.}
 
-\item Kdy má v~řízení jízdy přednost ovladač a kdy počítač?
+\item Kdy řídí vlak strojvedoucí a kdy počítač? Kdy přechází odpovědnost za
+řízení vlaku z~počítače na strojvedoucího a zpět?
 \solution{Pokud je zaškrtnuto \textit{Ruční řízení}, řídíte jízdu vlaku
-výhradně vy, příkazy počítače se ignorují. Pokud je volba \textit{Ruční řízení}
-odškrtnutá, jízdu řídí počítač, funkce však řídíte vy (funkce počítače se
-ignorují nezávisle na zaškrtnutí \textit{Ruční řízení}).}
+výhradně vy, jízdní povely počítače se ignorují. Pokud je volba \textit{Ruční řízení}
+odškrtnutá, jízdu řídí počítač, funkce však řídíte vy. Při zaškrtnuté volbě
+\textit{Ruční řízení} máte za vlak plnou odpovědnost včetně případné úhrady
+a~oprav škod způsobených vaši nedbalostí.}
 
-\item Pouští počítač automaticky funkce houkání apod., když je HV na ovladači?
-\solution{Ne. Funkce jsou vždy na strojvedoucím.}
+\item Kdy pouští zvuky vlaku automaticky počítač a kdy ručně strojvedoucí?
+\solution{Kdykoliv je hnací vozidlo vlaku převzato v aplikaci, a~to i~bez
+zaškrtnutí volby \textit{ruční řízení}, zvuky pouští výhradně strojvedoucí.}
+
+\item Jak strojvedoucí pozná, kde s~vlakem zastavit a kam nesmí jet?
+\solution{Strojvedoucí musí během jízdy kontrolovat návěsti na návěstním
+opakovači v~aplikaci a řídit se jimi. Strojvedoucí nesmí vlakem projet
+návěstidlo s~návěstí zakazující jízdu. Strojvedoucí musí zastavit, jakmile je
+maximální povolená rychlost vlaku 0 km/h.}
+
+\item Jaká je maximální rychlost pro posun?
+\solution{40 km/h.}
+
+\item Jaká je maximální rychlost vlaku?
+\solution{Momentální dovolená maximální rychlost se zobrazuje pod návěstním
+opakovačem v~aplikaci. Strojvedoucí nesmí tuto rychlost překročit.}
+
+\item Kdo odpovídá za dodržování maximální rychlosti?
+\solution{Aplikace nijak nekontroluje překročení maximální rychlosti.
+Strojvedoucí musí její nepřekročení hlídat sám.}
+
+\item Proč se hnací vozidlo nerozjede ihned po posunutí posuvníku rovnou na
+požadovanou rychlost?
+\solution{Každé hnací vozidlo má tzv. rozjezdovou křivku, díky které se rozjíždí
+pomalu. Při rozjezdu je tedy třeba počkat na ustálení rychlosti a ne posuvník
+hned posouvat na co nejvyšší hodnoty.}
+
+\item Na co je třeba dávat pozor při brzdění?
+\solution{Každé hnací vozidlo má tzv. brzdnou křivku, která způsobuje, že i~po
+posunutí rychlostního posuvníku na menší rychlost vozidlo dobržďuje pomalu.
+Jedná se řádově o~50 cm pro zastavení z~rychlosti 40 km/h, tedy poměrně pomalé
+brzdění! \textbf{Proto je třeba začít brzdit před místem zastavení včas!}}
+
+\item Jaká pravidla platí pro zastavení osobních vlaků ve stanicích?
+\solution{Vlaky zastavují u~perónů a to nejblíže dopravní kanceláři nebo
+podchodu, aby mohli lidé pohodlně odcházet. Při křižování jsou možné 2 scénáře:
+\uv{čely k sobě} nebo \uv{konci k~sobě}.}
 
 \item Jaká specifika platí pro řízení jízdy vlaku s~více lokomotivami v~multitrakci?
 \solution{U~všech lokomotiv, které chcete řídit v~multitrakci, musíte
@@ -122,20 +183,11 @@ zaškrtnout \textit{Multitrakce}. Funkce se řídí zvlášť, směr se řídí 
 rychlost se řídí dohromady. Po dokončení řízení musíte uvolnit všechny
 lokomotivy.}
 
-\item Popište, jak poznáte, kam až smíte s~vlakem jet.
-\solution{Strojvedoucí musí kontrolovat všechna návěstidla ve své cestě a~řídit
-se jimi. Pokud nejsou návěstidla fyzicky osazena, musí se domluvit
-s~dispečerem, kam až smí jet, nebo si otevřít panel obvodu, ve kterém se
-pohybuje, a kontrolovat návěsti na něm.}
-
-\item Co se stane při ztrátě wifi spojení?
-\solution{Řízené lokomotivy se navrátí do kontroly počítače.}
-
-\item Co se stane při otevření jiné aplikace?
-\solution{Všechny řízené lokomotivy plynule zastaví.}
-
-\item Co se stane při přetočení displeje?
-\solution{Všechny řízené lokomotivy plynule zastaví.}
+\item Lze mobilní telefon půjčit někomu jinému?
+\solution{Půjčovat mobilní telefon můžou pouze zkušení strojvedoucí s~hodinami
+praxe. Ten, kdo mobilní telefon půjčí, musí na něj pořád dávat pozor a
+kontrolovat, že se host chová bezpečně. Zodpovědnost za řízení vlaku má stále
+majitel telefonu!}
 
 \end{enumerate}
 
@@ -492,9 +544,9 @@ považován za vyložený/naložený po průjezdu jednoho Mn vlaku: první Mn vl
 přiveze, po druhý vlak zůstává vůz ve stanici, třetí Mn vlak vůz odváží.}
 
 \item Kde se dozvíte, jaké zboží a~jakými vozy stanice vyváží a~dováží?
-\solution{\textit{Platné pouze pro modulovku TT} \\ Na každé stanici je výtisk
+\solution{\textit{Platné pouze pro modulovku TT} \\ U~každé stanice je výtisk
 datových listů. Dostupné také online:\\
-\url{https://github.com/kmzbrnoI/ds-tt/releases}}.
+\url{https://github.com/kmzbrnoI/station-datasheets/releases}}.
 
 \item Které úkony je nutné vykonat k~řádnému zpracování manipulačního vlaku,
 který vám právě přijel do stanice? Zpracování manipulačního vlaku končí
