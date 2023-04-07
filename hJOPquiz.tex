@@ -314,23 +314,37 @@ Kdy tento mechanismus použít a~kdy naopak ne?
 všechny požadované panely, pak se v~jednom z~nich připojit k~serveru a~ponechat
 zatrhnutou možnost \textit{Autorizovat další panely}. Tím se automaticky
 přihlásí všechny další spuštěné panely. \\ Volbu \textit{Autorizovat další
-spuštěné panely} je vhodné ručně odtrhnout v~případě, kdy se chcete přihlásit
+spuštěné panely} je vhodné zrušit v~případě, kdy se chcete přihlásit
 pouze k~jedné stanici, například jako čtenář. Pokud byste tuto volbu ponechali
-zatrhnutou, všechny ostatní spuštěné panely, na které můžete být přihlášeni vy,
+zatrhnutou, všechny ostatní spuštěné panely, na které jste přihlášeni vy,
 se přehlásí na čtenáře, a~vy tak ztratíte možnost ovládat kolejiště.}
 
 \item Jak poznáte, že je panel připojen k~serveru?
 \solution{Vlevo dole na panelu je napsáno \textit{Připojeno k~serveru}}.
 
-\item Vysvětlete význam přepnutí stanice na místní a dálkový provoz.
-\solution{Místní provoz (šedá DK) = ovládáte stanici, ovládáte pouze vy a~nikdo
-jiný. Dálkový provoz (bílá DK) = pozorujete stanici, neovládáte, stanici může
-ovládat někdo jiný.}
+\item Vysvětlete význam všech barev symbolu dopravní kanceláře. Co je to místní
+a~dálkový provoz?
+\solution{Místní provoz (šedý symbol DK) = ovládáte stanici, ovládáte ji pouze
+vy a~nikdo jiný. Dálkový provoz (bílý symbol DK) = pozorujete stanici,
+neovládáte, stanici nikdo neovládá. Červený symbol DK = stanici ovládá někdo
+jiný.}
 
-\item Popište postup přebírání stanice jiným dispečerem, například při změně
+\item Popište postup přebírání stanice jiným výpravčím, například při změně
 směn.
-\solution{Odcházející dispečer se odhlásí, nový dispečer se přihlásí na svůj
+\solution{Odcházející výpravčí se odhlásí, nový výpravčí se přihlásí na svůj
 účet.}
+
+\item Jako výpravčí si potřebujete odskočit (například na toaletu). Co musíte
+provést?
+\solution{V této situaci máte několik možností. Vždy je dobré váš záměr
+oznámit výpravčímu sousední stanice, nejlépe mu na dobu vaši nepřítomnosti
+předat řízení vaši stanice. Pokud sousední výpravčí není dostupný, nemá čas nebo
+řízení stanice nechce, je před odchodem důležité se z~panelu odhlásit. A~to nejenom
+přepnutím řízení na dálkový provoz, ale i~odhlášením uživatele. Pokud byste se
+pouze přepnuli na dálkový provoz, mohl by přijít návštěvník a~začít stanici
+řídit kolejiště, což nechceme. \\
+Obecně byste po dobu své služby měli být u~své stanice a~odcházet jen ve
+výjimečných situacích.}
 
 \item Chcete se přihlásit ke stanici pouze na dívání, jak to provedete?
 \solution{Při přihlašování zvolíte \textit{Přihlásit se jako host} a ideálně
@@ -342,16 +356,17 @@ potlačení trvalé?
 1~minutu.}
 
 \item Můžete z~libovolného pracoviště ovládat libovolnou stanici?
-\solution{Pokud je ikona na ploše, ano.}
+\solution{Pokud je ikona stanice dostupná na ploše, ano.}
 
-\item Jakými všemi metodami mohu komunikovat s~dispečery sousedních stanic?
-\solution{Napsání zprávy, zavolání telefonem, fyzický rozhovor.}
+\item Jakými všemi metodami můžete komunikovat s~výpravčími sousedních stanic?
+\solution{Napsání zprávy, zavolání telefonem, rozhovor osobně. Při komunikaci
+na sebe zásadně nepořváváme, používáme výše uvedené prostředky.}
 
 \item Ke kolejišti přijde váš kamarád, který si chce zajezdit, ale nemá
 zaškolení (nemá login), co mu můžete povolit a co naopak nesmíte? Jak se k~němu
 máte chovat?
 \solution{Kamarád nesmí samostatně řídit stanici. Můžete ho pustit k~počítači
-a~nechat ho provádět úkony dispečera, ale musí být pod vaším trvalým dohledem.}
+a~nechat ho provádět úkony výpravčího, ale musí být pod vaším trvalým dohledem.}
 
 \end{enumerate}
 
@@ -368,19 +383,22 @@ typicky děláte?
 kterou vlak přijmete: osobní vlaky vždy k~perónu.}
 
 \item Vyjmenujte, jaká předčíslí souprav mají jaký význam.
+\solution{Viz nápovědu v~\texttt{EDIT vlak} okně hJOPpanelu.}
 
 \item Jaké je typické složení čísla vlaku? Jak poznat z~čísla vlaku DCC adresu
 lokomotivy?
-\solution{Šestimístné číslo vlaku: dvojmístné předčíslí (typ soupravy)
-a~čtyřmístná adresa dekodéru hnacího vozidla.}
+\solution{Číslo vlaku je typicky šestimístné číslo složené z~dvojmístného
+předčíslí (typ soupravy) a~čtyřmístné adresy dekodéru hnacího vozidla. Pokud má
+souprava více hnacích vozidel, jsou poslední 4 cifry čísla soupravy na volbě
+výpravčího.}
 
 \item Vysvětlete rozdíl mezi možným směrem vlaku a~směrem stanoviště A.
 \solution{Směr vlaku udává možný směr, kterým se vlak může pohybovat. Může být
 jeden nebo i~oba směry. Podle možného směru vlaku se vykresluje šipka nad
 číslem vlaku v~reliéfu. Možný směr vlaku neovlivňuje fyzický směr jízdy
 lokomotivy. Možný směr vlaku je vlastnost vlaku. \\ Orientace stanoviště A~je
-vlastnost lokomotivy. Udává, jakým směrem je lokomotiva fyzicky na kolejišti.
-Je nutné jej správně zadat, aby lokomotiva jela správným směrem.}
+vlastnost lokomotivy. Udává, jakým směrem je lokomotiva fyzicky otočena na
+kolejišti. Je nutné jej správně zadat, aby lokomotiva jela správným směrem.}
 
 \item Jak poznat, že mají hnací vozidla vlaku správně zadána stanoviště A?
 \solution{Všechny lokomotivy vlaku svítí správným směrem.}
@@ -465,13 +483,14 @@ závěr vlakové cesty.}
 \symbol{symboly/prej3.png}{0.1}{Nouzově otevřen.}
 
 \item Kdy je a~kdy není nutné žádat o~traťový souhlas?
-\solution{O~traťový souhlas není nutné žádat, pokud ho mám udělen, nebo pokud
-jsem přihlášený do obou stanic tratě.}
+\solution{O~traťový souhlas není nutné žádat, pokud ho máte udělen, nebo pokud
+jste přihlášený do obou stanic tratě. V~ostatních případech žádat musíte.}
 
 \item Co je to závěr a k~čemu slouží?
 \solution{Závěr je zapevnění bloku proti změně. Typicky například zamknutí
-výhybky. Závěr se uděluje na bloky v~jízdní cestě. Na výhybky, výkolejky a
-úvazky lze ručně udělit nouzový závěr volbou \texttt{ZAV>} v~menu bloku.}
+výhybky. Závěr se typicky uděluje na bloky v~jízdní cestě. Na výhybky,
+výkolejky, úvazky, zámky a pomocná stavědla lze ručně udělit nouzový závěr
+volbou \texttt{ZAV>} v~menu bloku.}
 
 \item Sousední stanice vás žádá o~traťový souhlas, vy ho však chcete přijmout až
 za minutu, jak nejlépe sdělit sousední stanici, že má počkat?
