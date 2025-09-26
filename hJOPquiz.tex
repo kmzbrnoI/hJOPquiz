@@ -122,9 +122,9 @@ pro strojvedoucího (např. zrychlit, zpomalit apod.).
 \begin{enumerate}[leftmargin=*]
 \item V jakých základních režimech lze ručně řídit hnací vozidla? Jaké jsou rozdíly
 těchto režimů?
-\solution{Jako vlak nebo jako posun. Rozdílů je hodně – způsob sjednávání jízdy,
-ne/funkčnost návěstního opakovače, maximální rychlost. Je třeba znát specifika
-obou režimů.}
+\solution{Jako vlak nebo jako posunový díl. Rozdílů je hodně – způsob
+sjednávání jízdy, ne/funkčnost návěstního opakovače, maximální rychlost, chování
+vlakového zabezpečovače. Je třeba znát specifika obou režimů.}
 
 \item Popište proces ručního řízení lokomotivy v~režimu \textit{posun} od zapnutí
 aplikace až do ukončení posunu. Na co je třeba si během posunu dávat pozor?
@@ -148,28 +148,44 @@ odškrtnutá, jízdu řídí počítač, funkce však řídíte vy. Při zaškrt
 \textit{Ruční řízení} máte za vlak plnou odpovědnost včetně případné úhrady
 a~oprav škod způsobených vaši nedbalostí.}
 
+\item Popište jednotlivé funkce vlakového zabezpečovače.
+\solution{V~režimu \textit{vlak}:
+\begin{enumerate}[noitemsep]
+\item kontrola nepřekročení povolené rychlosti vlaku,
+\item zamezení nepovolenému rozjetí,
+\item zamezení rozjetí nepovoleným směrem,
+\item zamezení nepovolené změny směru.
+\end{enumerate}
+V~režimu \texttt{posun}: kontrola nepřekročení 40 km/h.
+}
+
+\item Popište princip kontroly povolené rychlosti vlakovým zabezpečovačem.
+\solution{Pokud vlak nebo posunový díl překročí povolenou rychlost, musí
+strojvedoucí snížit rychlost na aktuální povolenou nebo nižší rychlost. Při nesnížení
+do limitu 3~sekund dojde k~nouzovému zastavení řízených vozidel. Tento postup zaručuje
+neprojetí návěstidla s~návěstí zakazující jízdu.}
+
 \item Kdy pouští zvuky vlaku automaticky počítač a kdy ručně strojvedoucí?
 \solution{Kdykoliv je hnací vozidlo vlaku převzato v aplikaci, a~to i~bez
-zaškrtnutí volby \textit{ruční řízení}, zvuky pouští výhradně strojvedoucí.}
+zaškrtnutí volby \textit{ruční řízení}, zvuky pouští výhradně strojvedoucí, jinak
+výhradně počítač.}
 
 \item Jak strojvedoucí pozná, kde s~vlakem zastavit a kam nesmí jet?
-\solution{Strojvedoucí musí během jízdy kontrolovat návěsti na návěstním
-opakovači v~aplikaci a řídit se jimi. Strojvedoucí nesmí vlakem projet
-návěstidlo s~návěstí zakazující jízdu. Strojvedoucí musí zastavit, jakmile je
-maximální povolená rychlost vlaku 0 km/h.}
+\solution{Strojvedoucí se řídí návěstmi přenášenými na návěstní opakovač, maximální
+dovolenou rychlostí a dovoleným směrem vlaku. Pokud se s~vlakem blíží k~místu
+zastavení, má zastavit v~momentě, kdy povolená rychlost vlaku klesne na 0 km/h.
+Činnost vlakového zabezpečovače v~posunu je značně omezená, proto jízdu v~posunu
+musí strojvedoucí vždy důsledně sjednat s~výpravčím (kdo, odkud, kam).}
 
-\item Jaká je maximální rychlost pro posun?
+\item Jaká je maximální rychlost posunu?
 \solution{40 km/h. Při sunutí vozů nejvýše 30 km/h. Při sunutí je třeba jet
-obzvláště opatrně a~pomalu, vagóny jsou oproti lokomotivě lehčí a proto můžou
+obzvláště opatrně a~pomalu, vagóny jsou oproti lokomotivě lehčí a proto mohou
 snadno vyskočit na výhybkách.}
 
 \item Jaká je maximální rychlost vlaku?
 \solution{Momentální dovolená maximální rychlost se zobrazuje pod návěstním
-opakovačem v~aplikaci. Strojvedoucí nesmí tuto rychlost překročit.}
-
-\item Kdo odpovídá za dodržování maximální rychlosti?
-\solution{Aplikace nijak nekontroluje překročení maximální rychlosti.
-Strojvedoucí musí její nepřekročení hlídat sám.}
+opakovačem v~aplikaci. Dodržení maximální rychlosti je kontrolováno vlakovým
+zabezpečovačem.}
 
 \item Proč se hnací vozidlo nerozjede ihned po posunutí posuvníku rovnou na
 požadovanou rychlost?
@@ -213,6 +229,11 @@ strojvedoucí nejvýše 40 km/h a~musí být schopen včas zastavit před libovo
 překážkou. Přivolávací návěst se typicky nepřenáší na návěstní opakovač, takže
 strojvedoucí musí sledovat fyzické návěstidlo, reliéf nebo se domluvit
 s~výpravčím.}
+
+\item V~jakých situacích kromě posunu se používá režim VZ \textit{posun}?
+\solution{Typicky jde o~jízdu na přivolávací návěst a další nouzové úkony vždy
+po souhlasu výpravčího. Při standardní jízdě vlaku je strojvedoucí povinen vlakový
+zabezpečovač vždy provozovat v režimu \textit{vlak}.}
 
 \end{enumerate}
 
