@@ -10,4 +10,4 @@ Vytvořeno společnými silami v [Klubu modelářů železnic Brno
 I](https://kmz-brno.cz/).
 
 Správce repozitáře:
- *  Jan Horáček ([jan.horacek@kmz-brno.cz](mailto:jan.horacek@kmz-brno.cz))
+ *  Jan Malina ([jan.malina@kmz-brno.cz](mailto:jan.malina@kmz-brno.cz))
