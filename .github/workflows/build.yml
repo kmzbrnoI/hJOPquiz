@@ -16,7 +16,7 @@ jobs:
       - name: Install toolchain
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-fonts-recommended texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-latex-recommended texlive-lang-czechslovak lmodern
+          sudo apt-get install -y texlive-latex-recommended texlive-lang-czechslovak texlive-fonts-recommended texlive-latex-extra texlive-extra-utils lmodern
 
       - name: Build pdf
         run: make
