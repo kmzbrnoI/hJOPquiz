@@ -101,12 +101,12 @@ s~výpravčím.
 \item Předveďte řízení lokomotivy v~režimu \textit{posun}. Dbejte na řádné
 sjednání posunu s~výpravčím.
 \solution{Při sjednání posunu výpravčí musí strojvedoucímu sdělit o~jaký
-posunový díl se jedná a kam se tento díl smí posouvat. Příklad (objetí soupravy): \\
-V: \uv{Modrý hektor na 1. koleji posun do záhlaví směr Ivančice povolen.} \\
+posunový díl se jedná a kam tento díl smí posunovat. Příklad (objetí vozů lokomotivou): \\
+V: \uv{Modrý hektor na 1. koleji v Náměšti posun do záhlaví směr Ivančice povolen.} \\
 S: \uv{Hektor je v záhlaví.} \\
 V: \uv{Hektor přes 3. kolej do záhlaví směr Čejč posun povolen.} \\
 S: \uv{Hektor je v záhlaví směr Čejč.} \\
-V: \uv{Hektor na 1. obsazneou kolej posun povolen, připoj se k~soupravě.}
+V: \uv{Hektor na 1. obsazneou kolej posun povolen, připoj se k~vozům.}
 }
 
 \item Předveďte poznání trati, ukažte polohy jednotlivých návěstidel.
@@ -269,13 +269,13 @@ serveru. Přihlaste se v~režimu čtenáře, předveďte přihlášení více pa
 \item Předveďte přepnutí řízení na místní a dálkový provoz.
 \end{enumerate}
 
-\subsubsection*{Soupravy}
+\subsubsection*{Vlaky}
 \begin{enumerate}[leftmargin=*]
-\item Proveďte vytvoření soupravy.
-\item Proveďte smazání soupravy.
-\item Zobrazte seznam souprav v~obvodech všech vámi řízených stanic, vysvětlete
+\item Vytvořte vlak.
+\item Smažte vlak.
+\item Zobrazte seznam vlaků v~obvodech všech vámi řízených stanic, vysvětlete
 význam tohoto seznamu.
-\item Upravte výchozí a cílovou stanici soupravy v~koncové stanici.
+\item Upravte výchozí a cílovou stanici vlaku v~koncové stanici.
 \end{enumerate}
 
 \subsubsection*{Bloky}
@@ -306,7 +306,7 @@ cest.
 \begin{enumerate}[leftmargin=*]
 \item Předveďte ruční řízení vlaku přes aplikaci Jerry.
 \item Předveďte komunikaci se strojvedoucím.
-\item Předveďte násilné převzetí soupravy od strojvedoucího.
+\item Předveďte násilné převzetí vlaku od strojvedoucího.
 \end{enumerate}
 
 \subsubsection*{Krizové scénáře}
@@ -391,26 +391,26 @@ a~nechat ho provádět úkony výpravčího, ale musí být pod vaším trvalým
 
 \end{enumerate}
 
-\subsubsection*{Soupravy}
+\subsubsection*{Vlaky}
 \begin{enumerate}[leftmargin=*]
 \item Jaký je rozdíl mezi vlakem, lokomotivou a~soupravou? Může se lokomotiva
 sama pohybovat na širé trati?
-\solution{Vlak = souprava. Souprava je složena z~jedné nebo více lokomotiv.
+\solution{Vlak = souprava. Vlak je složen z~jedné nebo více lokomotiv.
 Lokomotiva se na trati typicky pohybuje jako lokomotivní vlak.}
 
 \item Jak poznáte typ blížícího se vlaku? Jaká rozhodnutí na základě typu
 typicky děláte?
-\solution{Z~předčíslí soupravy. Podle typu vlaku například volíte kolej, na
+\solution{Z~předčíslí vlaku. Podle typu vlaku například volíte kolej, na
 kterou vlak přijmete: osobní vlaky vždy k~perónu.}
 
-\item Vyjmenujte, jaká předčíslí souprav mají jaký význam.
+\item Vyjmenujte, jaká předčíslí vlaků mají jaký význam.
 \solution{Viz nápovědu v~\texttt{EDIT vlak} okně hJOPpanelu.}
 
 \item Jaké je typické složení čísla vlaku? Jak poznat z~čísla vlaku DCC adresu
 lokomotivy?
 \solution{Číslo vlaku je typicky šestimístné číslo složené z~dvojmístného
-předčíslí (typ soupravy) a~čtyřmístné adresy dekodéru hnacího vozidla. Pokud má
-souprava více hnacích vozidel, jsou poslední 4 cifry čísla soupravy na volbě
+předčíslí (typ vlaku) a~čtyřmístné adresy dekodéru hnacího vozidla. Pokud má
+vlak více hnacích vozidel, jsou poslední 4 cifry čísla vlaku na volbě
 výpravčího.}
 
 \item Vysvětlete rozdíl mezi možným směrem vlaku a~směrem stanoviště A.
@@ -424,12 +424,12 @@ kolejišti. Je nutné jej správně zadat, aby lokomotiva jela správným směre
 \item Jak poznat, že mají hnací vozidla vlaku správně zadána stanoviště A?
 \solution{Všechny lokomotivy vlaku svítí správným směrem.}
 
-\item Kdy je a~kdy není třeba upravovat výchozí a~cílovou stanici soupravy?
+\item Kdy je a~kdy není třeba upravovat výchozí a~cílovou stanici vlaku?
 \solution{Výchozí a~cílová stanice se automaticky mění ve smyčkách. Pokud vlak
 končí v~jiné stanici, je třeba mu upravit výchozí a~cílovou stanici ručně.
 Vlak, který dorazit do cílové stanice, má své číslo šedě podbarvené.}
 
-\item Kolik lokomotiv může mít souprava?
+\item Kolik lokomotiv může mít vlak?
 \solution{Až 4.}
 
 \item Je nutné měnit orientaci stanoviště A~při otáčení vlaku v~koncové
@@ -562,10 +562,10 @@ a k~čemu vás to opravňuje?
 a~vidíte, že dva vlaky jedou proti sobě a~nezpomalují, přibližně za 5 s~do sebe
 narazí. Co uděláte?
 \solution{Klik na červenou ikonku na horní liště panelu \textit{Zastavit DCC
-na celém kolejišti}. Poté otevřít ovladač obou souprav, zastavit je a pustit
+na celém kolejišti}. Poté otevřít ovladač obou vlaků, zastavit je a pustit
 DCC. Tím lokomotivy zůstanou stát a~celé kolejiště se rozjede.}
 
-\item Kdy použít nouzové zastavení celého kolejiště a~kdy vybrané soupravy?
+\item Kdy použít nouzové zastavení celého kolejiště a~kdy vybraného vlaku?
 \solution{Nouzové zastavení celého kolejiště používejte v~případě, kdy není
 možné vlak zastavit jinak. Typicky například proto, že se vlak nenachází
 v~obvodu vámi řízené stanice. Nouzové zastavení celého kolejiště je krajní
@@ -576,7 +576,7 @@ volbou!}
 \subsubsection*{Odpovědnost}
 \begin{enumerate}[leftmargin=*]
 \item Popište, za co jako výpravčí odpovídáte.
-\solution{Za všechny soupravy v~obvodu vámi řízených stanic – za to, že se
+\solution{Za všechny vlaky v~obvodu vámi řízených stanic – za to, že se
 nepoškodí.}
 
 \item Co dělat, když na kolejišti něco rozbijete?
@@ -603,8 +603,8 @@ grafikonu.}
 nákladní doprava funguje?
 \solution{Pokud se \textit{jezdí nákladní doprava}, každý vůz každého
 manipulačního vlaku má přesně stanoveno, odkud a~kam jede. Např. \textit{první
-vůz Ztr v~soupravě 804734 jede z~Čejče k~silu Uhřice}. Tyto informace jsou
-zapsány v~poznámce soupravy. Obsluhy stanic se podle nich řídí. \\ Vůz je
+vůz Ztr ve vlaku 804734 jede z~Čejče k~silu Uhřice}. Tyto informace jsou
+zapsány v~poznámce vlaku. Obsluhy stanic se podle nich řídí. \\ Vůz je
 považován za vyložený/naložený po průjezdu jednoho Mn vlaku: první Mn vlak vůz
 přiveze, po druhý vlak zůstává vůz ve stanici, třetí Mn vlak vůz odváží.}
 
@@ -617,16 +617,16 @@ datových listů. Dostupné také online:\\
 který vám právě přijel do stanice? Zpracování manipulačního vlaku končí
 v~momentě jeho odjezdu ze stanice.
 \solution{\textit{Relevantní pouze při ježdění nákladní dopravy.} \\ V~editaci
-vlaku je v~poznámce k~soupravě uvedeno, jak naložit s~jednotlivými vagóny.
+vlaku je v~poznámce k~vlaku uvedeno, jak naložit s~jednotlivými vagóny.
 Vyřešte požadavky, které se týkají vaši stanice (připojení a~odpojení vozů).
-Přidejte do soupravy vagóny dle poptávky ar~plánů. Upravte počet vozů, délku
+Přidejte do vlaku vagóny dle poptávky. Upravte počet vozů, délku
 vlaku a~popis vagónů dle změn.}
 
 \item Potřebujete lokomotivní zálohu z~výtopny/depa, jak ji získáte?
 \solution{Zavoláte/napíšete do depa a~zálohu si vyžádáte.}
 
 \item Kam píšete nákladní vozy ve vlaku?
-\solution{V~editaci vlaku do pole \textit{Poznámky} k~soupravě.}
+\solution{V~editaci vlaku do pole \textit{Poznámky} k~vlaku.}
 
 \end{enumerate}
 
@@ -657,7 +657,7 @@ uLI-daemon.
 \subsection{Praktická část}
 
 \begin{enumerate}[leftmargin=*]
-\item Proveďte převzetí, řízení a uvolnění soupravy na Roco Multimaus.
+\item Proveďte převzetí, řízení a uvolnění vlaku na Roco Multimaus.
 \end{enumerate}
 
 \subsection{Teoretická část}
@@ -699,10 +699,10 @@ kterou umí hJOP nabídnout.
 \item Proveďte příjem vlaku na obsazenou kolej včetně zrušení nouzové cesty.
 \item Ručně uzavřete přejezd.
 \item Proveďte nouzové otevření přejezdu.
-\item Vytvořte a zrušte soupravu s~více lokomotivami.
-\item Přidejte na kolej více souprav.
-\item Přesuňte soupravu na jinou kolej.
-\item Prohoďte soupravy na jedné koleji.
+\item Vytvořte a zrušte vlak s~více lokomotivami.
+\item Přidejte na kolej více vlaků.
+\item Přesuňte vlak na jinou kolej.
+\item Prohoďte vlaky na jedné koleji.
 \item Proveďte vytvoření nové lokomotivy.
 \item Proveďte úpravu dat lokomotivy.
 \item Zjistěte, kde se nachází lokomotiva s~danou adresou.
@@ -787,9 +787,9 @@ doporučuje dojet do stanic.}
 
 \item Na jaké úseky lze a~na jaké nelze přesouvat vlaky?
 \solution{Vlaky lze přesouvat na staniční koleje a~některé vlečky. Na zbylé
-úseky (zhlaví,  záhlaví, trať, ...) soupravy přesouvat nelze.}
+úseky (zhlaví,  záhlaví, trať, ...) vlaky přesouvat nelze.}
 
-\item Vysvětlete barvy soupravy předvídaného odjezdu vlaku.
+\item Vyjmenujte barvy pozadí čísla vlaku týkající se předvídaného odjezdu a jejich význam.
 \solution{
 Inverzní pozadí a popředí: odpočet času nezačal plynout. \\
 Modré pozadí: do odjezdu zbývá více než 30 s. \\
